@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: black;
+    height: 50px;
+    text-align: right;
+}
+
+header button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    border: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+main {
+    height: calc(100vh - 130px);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.gallery {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.gallery-photo {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border: 2px solid background: rgba(0, 0, 0, 0.9);
+}
+
+.active {
+    border: 2px solid white;
+}
+
+.fa-microphone {
+    color: green;
+}
+
+.fa-microphone-slash {
+    color: red;
+}
+
+.name {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    max-width: 100px;
+}
+
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer {
+    height: 80px;
+    background-color: green;
+    display: flex;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
