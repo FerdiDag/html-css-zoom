@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    
 }
 
 header {
@@ -27,6 +28,7 @@ header button {
 main {
     height: calc(100vh - 130px);
     background: rgba(0, 0, 0, 0.9);
+
 }
 
 .gallery {
@@ -43,7 +45,7 @@ main {
     position: relative;
     width: 250px;
     height: 150px;
-    border: 2px solid background: rgba(0, 0, 0, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.9);
 }
 
 .active {
@@ -76,21 +78,85 @@ main {
 
 footer {
     height: 80px;
-    background-color: green;
+    background-color: black;
+    color: white;
     display: flex;
+    justify-content: space-between;
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {}
+.footer-left {
+    display: flex;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {}
+}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {}
+.footer-center {
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {}
+.footer-left-button {
+    padding: 15px;
+    position: relative;
+    color: white;
+}
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
+.footer-left-button i {
+    color: white;
+}
+
+.btn-description {
+    padding-top: 5px;
+    display: block;
+}
+
+.footer-left-button:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f0d8";
+    position: absolute;
+    right: 0%;
+    top: 30%;
+}
+
+.footer-center-button {
+    color: white;
+}
+
+.footer-center-button i {
+    color: white;
+}
+
+.footer-right {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+
+}
+
+.footer-right button {
+    border: none;
+    background-color: black;
+    color: red;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-right button:hover {
+    cursor: pointer;
+}
+
+@media all and (max-width: 992px) {
+    .footer-center {
+        display: none;
+    }
+}
