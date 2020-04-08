@@ -6,11 +6,12 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: black;
 
 }
 
 header {
-    background-color: black;
+
     height: 50px;
     text-align: right;
 }
@@ -27,11 +28,12 @@ header button {
 
 main {
     height: calc(100vh - 130px);
-    background: rgba(0, 0, 0, 0.9);
+
 
 }
 
 .gallery {
+
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +80,7 @@ main {
 
 footer {
     height: 80px;
-    background-color: black;
+
     color: white;
     display: flex;
     justify-content: space-between;
@@ -119,7 +121,7 @@ footer {
 
 .footer-left-button:after {
     font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+    font-weight: 900;
     content: "\f0d8";
     position: absolute;
     right: 0%;
